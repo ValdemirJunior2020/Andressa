@@ -1,4 +1,4 @@
-﻿import React, { useMemo } from 'react';
+﻿import React, { useMemo } from "react";
 
 export default function Snow({ flakes = 80 }) {
   const items = useMemo(
@@ -19,12 +19,12 @@ export default function Snow({ flakes = 80 }) {
           key={i}
           className="snowflake"
           style={{
-            left: ${f.left}%,
-            animationDuration: ${f.duration}s,
-            animationDelay: ${f.delay}s,
-            width: ${f.size}px,
-            height: ${f.size}px,
-            borderRadius: '50%',
+            left: `${f.left}%`,
+            animationDuration: `${f.duration}s`,
+            animationDelay: `${f.delay}s`,
+            width: `${f.size}px`,
+            height: `${f.size}px`,
+            borderRadius: "50%",
           }}
         />
       ))}

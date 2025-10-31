@@ -1,4 +1,4 @@
-﻿import React, { useMemo } from 'react';
+﻿import React, { useMemo } from "react";
 
 export default function Balloons({ count = 12 }) {
   const items = useMemo(
@@ -20,12 +20,13 @@ export default function Balloons({ count = 12 }) {
           key={i}
           className="balloon"
           style={{
-            left: ${b.left}%,
-            animationDuration: ${b.duration}s,
-            animationDelay: ${b.delay}s,
-            width: ${b.size}px,
-            height: ${b.size * 1.3}px,
-            ['--h']: b.hue,
+            left: `${b.left}%`,
+            animationDuration: `${b.duration}s`,
+            animationDelay: `${b.delay}s`,
+            width: `${b.size}px`,
+            height: `${b.size * 1.3}px`,
+            "--h": b.hue,
+
           }}
         >
           <span className="string" />
