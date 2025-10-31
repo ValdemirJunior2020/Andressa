@@ -1,4 +1,4 @@
-﻿import React, { useMemo } from "react";
+import React, { useMemo } from "react";
 
 export default function Snow({ flakes = 80 }) {
   const items = useMemo(
