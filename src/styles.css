@@ -1,0 +1,71 @@
+﻿:root{
+  --bg1:#0b1b2a; --bg2:#142c3f; --accent:#e11d2e; --gold:#f7d774; --card:rgba(255,255,255,.08); --text:#f7fafc;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0; color:var(--text);
+  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #203a53 0, transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, #203a53 0, transparent 60%),
+    linear-gradient(180deg, var(--bg1), var(--bg2));
+  overflow:hidden;
+}
+.page{position:relative;height:100%}
+.container{position:relative;max-width:900px;margin:0 auto;padding:32px 20px 64px}
+.header{text-align:center;margin-top:24px}
+.header h1{margin:0 0 6px;font-weight:800}
+.author{opacity:.9;margin:0;font-weight:600}
+.card{
+  margin:24px auto;background:var(--card);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:22px;line-height:1.7;font-size:1.05rem;
+}
+.card p{margin:12px 0}.card strong{color:var(--gold)}
+.cta{
+  margin:18px auto 8px;text-align:center;background:rgba(225,29,46,.15);
+  border:1px solid rgba(225,29,46,.35);border-radius:16px;padding:20px 16px;
+}
+.cta h2{margin:4px 0 12px}
+.info{list-style:none;padding:0;margin:0 0 12px}
+.info li{margin:8px 0;font-size:1.05rem}
+.label{opacity:.85;margin-right:6px}
+.pix{letter-spacing:.5px}
+.btn{
+  margin-left:10px;padding:8px 14px;border-radius:999px;border:0;background:var(--accent);
+  color:#fff;font-weight:700;cursor:pointer
+}
+.btn:hover{filter:brightness(1.05)}
+.fine-print{opacity:.9;font-size:.95rem}
+.footer{text-align:center;margin-top:18px;opacity:.9}
+
+/* ===== Balloons ===== */
+.balloons{position:absolute;inset:0;pointer-events:none}
+.balloon{
+  position:absolute;bottom:-120px;border-radius:60% 60% 60% 60%;
+  background: radial-gradient(circle at 30% 30%, #ffffff66, transparent 40%),
+              hsl(var(--h,0) 75% 55%);
+  box-shadow: 0 8px 18px rgba(0,0,0,.25);
+  animation: floatUp linear infinite;
+  display:flex;align-items:flex-end;justify-content:center;
+}
+.balloon .string{
+  width:2px;height:40px;background:rgba(255,255,255,.7);border-radius:2px;margin-bottom:-38px;
+}
+@keyframes floatUp{
+  0%{transform:translateY(0) rotate(0deg)}
+  50%{transform:translateY(-60vh) rotate(2deg)}
+  100%{transform:translateY(-120vh) rotate(-1deg)}
+}
+
+/* ===== Snow ===== */
+.snow{position:absolute;inset:0;pointer-events:none}
+.snowflake{
+  position:absolute;top:-10px;width:6px;height:6px;border-radius:50%;
+  background:rgba(255,255,255,.95);filter:drop-shadow(0 0 6px rgba(255,255,255,.6));
+  animation:snow linear infinite;
+}
+@keyframes snow{
+  0%{transform:translateY(-10px)}
+  100%{transform:translateY(110vh)}
+}

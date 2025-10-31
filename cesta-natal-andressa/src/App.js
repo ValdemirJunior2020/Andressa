@@ -22,6 +22,11 @@ export default function App() {
       <Balloons count={14} />
 
       <main className="container">
+        {/* HERO com a imagem do post (public/logo.png) */}
+        <section className="hero" aria-label="Post de Natal">
+          <img src="/logo.png" alt="Convite Cesta de Natal – Andressa" className="hero-img" />
+        </section>
+
         <header className="header">
           <h1>Cesta de Natal 🎄</h1>
           <p className="author">por Andressa Gonçalves Mendes Meira</p>
@@ -43,6 +48,7 @@ export default function App() {
               <span className="label">Chave Pix:</span>
               <strong className="pix">{chavePix}</strong>
               <button className="btn" onClick={copiarPix}>{copiado ? "Copiado!" : "Copiar"}</button>
+              <a className="btn btn-ghost" href="/logo.png" download>Baixar arte</a>
             </li>
             <li><span className="label">Banco:</span> <strong>Bradesco</strong></li>
           </ul>
