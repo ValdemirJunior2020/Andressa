@@ -6,6 +6,7 @@ import Balloons from "./components/balloons";
 import Snow from "./components/snow";
 
 
+
 export default function App() {
   const [copiado, setCopiado] = useState(false);
   const chavePix = "44-999198183";

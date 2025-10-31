@@ -26,7 +26,6 @@ export default function Balloons({ count = 12 }) {
             width: `${b.size}px`,
             height: `${b.size * 1.3}px`,
             "--h": b.hue,
-
           }}
         >
           <span className="string" />
