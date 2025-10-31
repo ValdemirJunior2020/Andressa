@@ -1,8 +1,10 @@
-﻿import Balloons from "./components/balloons";
+﻿
 
 import React, { useState } from "react";
-import Balloons from "./components/Balloons";
-import Snow from "./components/Snow";
+
+import Balloons from "./components/balloons";
+import Snow from "./components/snow";
+
 
 export default function App() {
   const [copiado, setCopiado] = useState(false);
